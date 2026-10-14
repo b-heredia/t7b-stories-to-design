@@ -1,8 +1,11 @@
 {
-  "title": "ReplaceWithYourRequestName",
+  "title": "LogIncidentRequest",
   "type": "object",
-  "required": [],
+  "required": ["branch", "category", "description", "downtimeMinutes"],
   "properties": {
-    "exampleField": { "type": "string" }
+    "branch": { "type": "string" },
+    "category": { "type": "string", "enum": ["Scanner", "Conveyor", "System"] },
+    "description": { "type": "string" },
+    "downtimeMinutes": { "type": "integer", "minimum": 0 }
   }
 }
