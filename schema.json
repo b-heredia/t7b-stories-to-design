@@ -1,0 +1,8 @@
+{
+  "title": "ReplaceWithYourRequestName",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "exampleField": { "type": "string" }
+  }
+}
